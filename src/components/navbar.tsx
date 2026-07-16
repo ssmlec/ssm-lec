@@ -53,7 +53,7 @@ export function Navbar() {
     "fixed inset-x-0 top-0 z-50 transition-all duration-300",
     scrolled
       ? "bg-white/80 backdrop-blur-xl shadow-lg border-b border-blue-100 py-2"
-      : "bg-transparent py-3"
+      : "bg-white/80 backdrop-blur-xl shadow-lg border-b border-blue-100 py-2"
   )}
 >
       <nav className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 sm:px-6 lg:px-8">
@@ -75,7 +75,7 @@ export function Navbar() {
         "flex items-center gap-1 rounded-full px-3.5 py-2 text-sm font-medium transition-all duration-300",
         scrolled
           ? "text-blue-900 hover:bg-blue-50 hover:text-blue-700"
-          : "text-white hover:bg-white/10 hover:text-white"
+          : "text-blue-900 hover:bg-blue-50 hover:text-blue-700"
       )}
       aria-expanded={megaOpen}
     >
@@ -138,7 +138,7 @@ export function Navbar() {
 
   <NavItem to="/placements" label="Placements" scrolled={scrolled} />
   <NavItem to="/gallery" label="Gallery" scrolled={scrolled} />
-  <NavItem to="/blog" label="Blog" scrolled={scrolled} />
+  {/* <NavItem to="/blog" label="Blog" scrolled={scrolled} /> */}
   <NavItem to="/events" label="Events" scrolled={scrolled} />
   <NavItem to="/contact" label="Contact" scrolled={scrolled} />
 </div>
@@ -250,11 +250,11 @@ function NavItem({
           "rounded-full px-3.5 py-2 text-sm font-semibold transition-all duration-300",
           scrolled
             ? "text-blue-900 hover:bg-blue-50 hover:text-blue-700"
-            : "text-white hover:bg-white/10",
+            : "text-blue-900 hover:bg-blue-50 hover:text-blue-700",
           isActive &&
             (scrolled
               ? "bg-blue-100 text-blue-700"
-              : "bg-white text-red-600")
+              : "bg-white text-blue-700")
         )
       }
     >

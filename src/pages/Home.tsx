@@ -15,6 +15,8 @@ import {
 
 import heroBg from "@/assets/Background2.png";
 import aboutLab from "@/assets/heroimg.png";
+import aboutLab1 from "@/assets/home-2nd-photo.jpg";
+
 import { Button } from "@/components/ui/button";
 import {
   Accordion,
@@ -74,15 +76,15 @@ export default function Home() {
       <About />
       <WhyChoose />
       <StatsBand />
-      <FeaturedCourses />
+      {/* <FeaturedCourses /> */}
       <PlacementHighlights />
       <SuccessStories />
       <Testimonials />
       <VideoTestimonials />
-      <GalleryPreview />
-      <FaqSection />
-      <BlogPreview />
-      <ContactCta />
+      {/* <GalleryPreview /> */}
+      {/* <FaqSection /> */}
+      {/* <BlogPreview /> */}
+      {/* <ContactCta /> */}
     </>
   );
 }
@@ -199,7 +201,7 @@ function PartnersStrip() {
   return (
     <section className="border-y bg-muted/40 py-8">
       <p className="mb-5 text-center text-sm font-semibold uppercase tracking-widest text-muted-foreground">
-        Our learners work at leading companies
+        Empowering Leading Organizations Through Training
       </p>
       <PartnerMarquee />
     </section>
@@ -219,7 +221,7 @@ function About() {
       <div className="mx-auto grid max-w-7xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
         <Reveal className="relative">
           <img
-            src={aboutLab}
+            src={aboutLab1}
             alt="SSMLEC industrial automation training lab"
             width={1280}
             height={960}
@@ -656,3 +658,6 @@ function ContactCta() {
     </section>
   );
 }
+
+
+export {FaqSection}
