@@ -153,8 +153,8 @@ export function Footer() {
         <div className="mt-8 flex flex-col items-center justify-between gap-3 border-t border-white/10 pt-6 text-sm text-primary-foreground/60 sm:flex-row">
           <p>© {new Date().getFullYear()} SSM Learning Excellence Centre. All rights reserved.</p>
           <div className="flex gap-4">
-            <Link to="/privacy" className="hover:text-accent">Privacy Policy</Link>
-            <Link to="/terms" className="hover:text-accent">Terms &amp; Conditions</Link>
+            {/* <Link to="/privacy" className="hover:text-accent">Privacy Policy</Link> */}
+            {/* <Link to="/terms" className="hover:text-accent">Terms &amp; Conditions</Link> */}
           </div>
         </div>
       </div>
