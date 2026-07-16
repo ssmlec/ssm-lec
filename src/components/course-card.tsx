@@ -59,7 +59,7 @@ export function CourseCard({ course }: { course: Course }) {
             </Button>
           </EnquiryDialog>
         </div>
-        <Button
+        {/* <Button
           variant="ghost"
           size="sm"
           className="mt-2 text-muted-foreground"
@@ -70,7 +70,7 @@ export function CourseCard({ course }: { course: Course }) {
           }
         >
           <Download className="size-4" /> Download Brochure
-        </Button>
+        </Button> */}
       </div>
     </article>
   );

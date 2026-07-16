@@ -12,17 +12,23 @@ const mvp = [
   {
     icon: Eye,
     title: "Our Vision",
-    desc: "Helping engineers to become technocrats for ready engagement in the field of Automation and Industry 4.0.",
+    desc: "To become India's most trusted industry-led learning ecosystem, empowering individuals and organizations with future-ready skills that accelerate careers, drive innovation, and transform businesses.",
   },
-  {
-    icon: Target,
-    title: "Our Mission",
-    desc: "To promote and enhance the continuing education of emerging technocrats and skilled talents by offering world-class, innovative and career-focused programs, and help them climb the professional path to national & multinational companies.",
-  },
+{
+  icon: Target,
+  title: "Our Mission",
+  desc: [
+    "Bridge the gap between academia and industry through experiential learning.",
+    "Develop highly skilled professionals equipped for Industry 4.0 and beyond.",
+    "Partner with enterprises to build agile, future-ready workforces.",
+    "Deliver globally benchmarked learning experiences through technology, innovation, and industry expertise.",
+    "Create meaningful career opportunities through skill development and industry partnerships.",
+  ],
+},
   {
     icon: Flag,
-    title: "Our Purpose",
-    desc: "An industry-centered facility providing a platform for aspiring technocrats to improve skills in software, automation and IT — a gateway to launch professional careers.",
+    title: "Our Promise",
+    desc: "At SSM Learning Excellence Centre, we believe that education should create measurable outcomes—not just certificates. Every program is designed to build competence, confidence, and career success while enabling organizations to develop skilled talent capable of delivering business impact from day one.",
   },
 ];
 
@@ -69,27 +75,20 @@ export default function AboutPage() {
         ]}
         links={[{ rel: "canonical", href: "/about" }]}
       />
-      <PageHero
+      {/* <PageHero
         eyebrow="About Us"
         title="Craft your inner technocrat"
         subtitle="SSM Learning Excellence Centre is an industry-centered gateway that turns aspiring engineers into industry-ready technocrats."
         crumbs={[{ label: "About" }]}
-      />
+      /> */}
+        <section className="relative overflow-hidden bg-gradient-hero pb-0 pt-32 text-white sm:pb-20 sm:pt-36">
 
-      {/* Overview */}
-      <section className="py-20 sm:py-28">
+        <section className="py-10 sm:py-2">
         <div className="mx-auto grid max-w-7xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
           <Reveal>
             <img src={aboutLab} alt="SSMLEC training facility" width={1280} height={960} loading="lazy" className="rounded-3xl shadow-glow" />
-          </Reveal>
-          <div>
-            <SectionHeading
-              align="left"
-              eyebrow="Institute Overview"
-              title="A platform to launch professional careers"
-              subtitle="We provide industry-based skill development, hands-on live projects and direct training from industry experts — serving as a gateway to employment at domestic and multinational companies."
-            />
-            <div className="mt-8 grid grid-cols-2 gap-4">
+
+                  <div className="mt-8 grid grid-cols-2 gap-4">
               {stats.map((s) => (
                 <div key={s.label} className="rounded-2xl border bg-card p-5 shadow-soft">
                   <p className="font-display text-3xl font-extrabold text-gradient">
@@ -99,12 +98,59 @@ export default function AboutPage() {
                 </div>
               ))}
             </div>
+          </Reveal>
+          
+          <div>
+      <SectionHeading
+            align="left"
+            light={true}
+            eyebrow="Institute Overview"
+            title="Transforming Potential into Professional Excellence"
+            subtitle="SSM Learning Excellence Centre (SSM LEC) is the talent development and workforce transformation division of SSM Infotech Solutions, a trusted leader with over 25 years of expertise in Industrial Software, Industrial Automation, Digital Engineering, and Information Technology solutions.
+            Established in April 2023, SSM LEC was founded with a clear vision—to bridge the gap between academic education and industry expectations by developing highly skilled, industry-ready professionals equipped for the future of engineering and digital transformation.
+            Through a unique blend of experiential learning, industry-led curriculum, hands-on project exposure, and globally recognized certifications, we empower students, working professionals, and corporate teams with the competencies required to excel in today's technology-driven industrial ecosystem."
+          />
+      
           </div>
         </div>
       </section>
+      
+    </section>
+
+      {/* Overview */}
+      {/* <section className="py-20 sm:py-28">
+        <div className="mx-auto grid max-w-7xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
+          <Reveal>
+            <img src={aboutLab} alt="SSMLEC training facility" width={1280} height={960} loading="lazy" className="rounded-3xl shadow-glow" />
+
+                  <div className="mt-8 grid grid-cols-2 gap-4">
+              {stats.map((s) => (
+                <div key={s.label} className="rounded-2xl border bg-card p-5 shadow-soft">
+                  <p className="font-display text-3xl font-extrabold text-gradient">
+                    <Counter value={s.value} suffix={s.suffix} />
+                  </p>
+                  <p className="text-sm text-muted-foreground">{s.label}</p>
+                </div>
+              ))}
+            </div>
+          </Reveal>
+          
+          <div>
+            <SectionHeading
+              align="left"
+              eyebrow="Institute Overview"
+              title="Transforming Potential into Professional Excellence"
+              subtitle="SSM Learning Excellence Centre (SSM LEC) is the talent development and workforce transformation division of SSM Infotech Solutions, a trusted leader with over 25 years of expertise in Industrial Software, Industrial Automation, Digital Engineering, and Information Technology solutions.
+              Established in April 2023, SSM LEC was founded with a clear vision—to bridge the gap between academic education and industry expectations by developing highly skilled, industry-ready professionals equipped for the future of engineering and digital transformation.
+              Through a unique blend of experiential learning, industry-led curriculum, hands-on project exposure, and globally recognized certifications, we empower students, working professionals, and corporate teams with the competencies required to excel in today's technology-driven industrial ecosystem."
+            />
+      
+          </div>
+        </div>
+      </section> */}
 
       {/* Mission / Vision / Purpose */}
-      <section className="bg-gradient-soft py-20 sm:py-28">
+      {/* <section className="bg-gradient-soft py-20 sm:py-28">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionHeading eyebrow="What Drives Us" title="Mission, Vision & Purpose" />
           <div className="mt-14 grid gap-6 md:grid-cols-3">
@@ -118,6 +164,42 @@ export default function AboutPage() {
                     </span>
                     <h3 className="mt-5 text-xl font-bold">{m.title}</h3>
                     <p className="mt-3 text-sm text-muted-foreground">{m.desc}</p>
+                  </div>
+                </Reveal>
+              );
+            })}
+          </div>
+        </div>
+      </section> */}
+      {/* Mission / Vision / Promise */}
+      <section className="bg-gradient-soft py-20 sm:py-28">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <SectionHeading eyebrow="What Drives Us" title="Mission, Vision & Purpose" />
+
+          <div className="mt-14 grid gap-6 md:grid-cols-3">
+            {mvp.map((m, i) => {
+              const Icon = m.icon;
+
+              return (
+                <Reveal key={m.title} delay={i * 0.08}>
+                  <div className="card-hover h-full rounded-2xl border bg-card p-7 shadow-soft">
+                    <span className="grid size-12 place-items-center rounded-xl bg-gradient-brand text-white shadow-accent">
+                      <Icon className="size-6" />
+                    </span>
+
+                    <h3 className="mt-5 text-xl font-bold">{m.title}</h3>
+
+                    {Array.isArray(m.desc) ? (
+                      <ul className="mt-3 list-disc space-y-2 pl-5 text-sm text-muted-foreground">
+                        {m.desc.map((item, index) => (
+                          <li key={index}>{item}</li>
+                        ))}
+                      </ul>
+                    ) : (
+                      <p className="mt-3 text-sm text-muted-foreground">
+                        {m.desc}
+                      </p>
+                    )}
                   </div>
                 </Reveal>
               );

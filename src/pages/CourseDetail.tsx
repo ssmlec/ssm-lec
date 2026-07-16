@@ -101,13 +101,13 @@ export default function CourseDetail() {
           <EnquiryDialog defaultCourse={course.title} title={`Enquire: ${course.title}`}>
             <Button variant="accent" size="lg">Enquire Now <ArrowRight className="size-4" /></Button>
           </EnquiryDialog>
-          <Button
+          {/* <Button
             variant="outline-light"
             size="lg"
             onClick={() => toast.success("Brochure request received", { description: `We'll email the ${course.title} brochure shortly.` })}
           >
             <Download className="size-4" /> Download Brochure
-          </Button>
+          </Button> */}
         </div>
       </PageHero>
 
