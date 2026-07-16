@@ -452,6 +452,15 @@ export const placementStats = [
 
 import landt from "../assets/maquee _logos/Picture1.png"
 import infosys from "../assets/maquee _logos/infosys.png"
+import tcs from "../assets/maquee _logos/tcs.png"
+import sa from "../assets/maquee _logos/sageautomation.png"
+import ril from "../assets/maquee _logos/ril.png"
+import bridgestone from "../assets/maquee _logos/bridgestone.png"
+import cg from "../assets/maquee _logos/cg.png"
+import accenture from "../assets/maquee _logos/accenture.png"
+import nstl from "../assets/maquee _logos/nstl.png"
+import mgl from "../assets/maquee _logos/mgl.png"
+import se from "../assets/maquee _logos/Schneider Electric.png"
 
 export const partners = [
   {
@@ -464,39 +473,39 @@ export const partners = [
   },
   {
     name: "TCS",
-    logo: "/partners/tcs.png",
+    logo: tcs,
   },
   {
     name: "Sage Automation",
-    logo: "/partners/sage-automation.png",
+    logo: sa,
   },
   {
     name: "Schneider Electric",
-    logo: "/partners/schneider-electric.png",
+    logo: se,
   },
   {
     name: "Reliance Industries",
-    logo: "/partners/reliance.png",
+    logo: ril,
   },
   {
-    name: "HCL Technologies",
-    logo: "/partners/hcl.png",
+    name: "Mahanagar gas",
+    logo: mgl,
   },
   {
     name: "Bridgestone",
-    logo: "/partners/bridgestone.png",
+    logo: bridgestone,
   },
   {
-    name: "Wipro",
-    logo: "/partners/wipro.png",
+    name: "Nestle",
+    logo: nstl,
   },
   {
-    name: "Capgemini",
-    logo: "/partners/capgemini.png",
+    name: "Accenture",
+    logo: accenture,
   },
   {
-    name: "Siemens",
-    logo: "/partners/siemens.png",
+    name: "Colgate",
+    logo: cg,
   },
 ];
 
