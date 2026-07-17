@@ -1,6 +1,6 @@
 import { Eye, Target, Flag, History, Users, Building, BadgeCheck, CheckCircle2 } from "lucide-react";
 
-import aboutLab from "@/assets/about-lab.jpg";
+import aboutLab from "@/assets/about-page.jpeg";
 import { PageHero } from "@/components/page-hero";
 import { SectionHeading } from "@/components/section-heading";
 import { Reveal } from "@/components/reveal";
