@@ -75,9 +75,9 @@ export default function Home() {
       <PartnersStrip />
       <About />
       <WhyChoose />
-      <StatsBand />
+      {/* <StatsBand /> */}
       {/* <FeaturedCourses /> */}
-      <PlacementHighlights />
+      {/* <PlacementHighlights /> */}
       <SuccessStories />
       <Testimonials />
       <VideoTestimonials />
@@ -170,13 +170,13 @@ function Hero() {
             animate={{ y: [0, -10, 0] }}
             transition={{ duration: 5, repeat: Infinity }}
           >
-            <span className="grid size-11 place-items-center rounded-xl bg-gradient-brand text-white">
+            {/* <span className="grid size-11 place-items-center rounded-xl bg-gradient-brand text-white">
               <Award className="size-5" />
-            </span>
-            <div>
+            </span> */}
+            {/* <div>
               <p className="font-display text-xl font-bold text-white">95%</p>
               <p className="text-xs text-white/70">Placement Rate</p>
-            </div>
+            </div> */}
           </motion.div>
           <motion.div
             className="glass absolute -right-4 top-8 flex items-center gap-3 rounded-2xl p-4"
@@ -187,8 +187,8 @@ function Hero() {
               <Users className="size-5" />
             </span>
             <div>
-              <p className="font-display text-xl font-bold text-white">12k+</p>
-              <p className="text-xs text-white/70">Learners</p>
+              <p className="font-display text-xl font-bold text-[#343968]">800+</p>
+              <p className="text-xs text-[#343968]">Learners</p>
             </div>
           </motion.div>
         </motion.div>
@@ -217,7 +217,7 @@ const aboutPoints = [
 
 function About() {
   return (
-    <section className="py-20 sm:py-28">
+    <section className="py-20 sm:py-8">
       <div className="mx-auto grid max-w-7xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
         <Reveal className="relative">
           <img
@@ -229,14 +229,14 @@ function About() {
             className="rounded-3xl shadow-glow"
           />
           <div className="absolute -bottom-6 right-6 rounded-2xl bg-gradient-brand px-6 py-4 text-white shadow-accent">
-            <p className="font-display text-3xl font-extrabold">15+</p>
+            <p className="font-display text-3xl font-extrabold">3.5 +</p>
             <p className="text-sm text-white/80">Years of Excellence</p>
           </div>
         </Reveal>
         <div>
           <SectionHeading
             align="left"
-            eyebrow="About SSMLEC"
+            // eyebrow="About SSMLEC"
             title="An industry-centered gateway to Industry 4.0 careers"
             subtitle="The Learning Excellence Centre helps aspiring technocrats deepen their skills in software, automation and IT, and launch professional careers at leading national and international companies."
           />

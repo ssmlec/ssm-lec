@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { cn } from "@/lib/utils";
-import logoAsset from "@/assets/Logo-4.png";
+import logoAsset from "@/assets/SSM-Lec-Logo.png";
 
 export function Logo({ light = false, className }: { light?: boolean; className?: string }) {
   return (
