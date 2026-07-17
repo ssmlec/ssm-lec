@@ -437,10 +437,10 @@ export const featuredCourseSlugs = [
 ];
 
 export const stats = [
-  { value: 12000, suffix: "+", label: "Learners Trained" },
-  { value: 95, suffix: "%", label: "Placement Rate" },
-  { value: 250, suffix: "+", label: "Hiring Partners" },
-  { value: 15, suffix: "+", label: "Years of Excellence" },
+  { value: 800, suffix: "+", label: "Learners Trained" },
+  { value: 60, suffix: "+", label: "Corporate Training" },
+  { value: 4, suffix: "+", label: "Years of Excellence" },
+  { value: 30, suffix: "+", label: "Corporate Clients" },
 ];
 
 export const placementStats = [

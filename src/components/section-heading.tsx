@@ -1,5 +1,6 @@
 import { Reveal } from "@/components/reveal";
 import { cn } from "@/lib/utils";
+import { Sparkles } from "lucide-react";
 
 interface SectionHeadingProps {
   eyebrow?: string;
@@ -27,14 +28,19 @@ export function SectionHeading({
       )}
     >
       {eyebrow && (
+        
         <span
           className={cn(
-            "mb-3 inline-flex items-center gap-2 rounded-full border px-3 py-1 text-xs font-semibold uppercase tracking-widest",
+            "inline-flex items-center gap-4 rounded-full border border-white/25 bg-white/10 px-4 mx-4 py-1.5 text-sm font-medium backdrop-blur-md",
             light
               ? "border-white/30 text-white/90"
               : "border-accent/30 bg-accent/10 text-accent",
           )}
+
+          style={{margin:"50px 0px"}}
         >
+          <Sparkles className="size-4 text-accent" />
+
           {eyebrow}
         </span>
       )}

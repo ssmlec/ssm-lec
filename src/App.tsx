@@ -12,13 +12,13 @@ import CourseDetail from "@/pages/CourseDetail";
 import Placements from "@/pages/Placements";
 import Gallery from "@/pages/Gallery";
 import Blog from "@/pages/Blog";
-import Events from "@/pages/Events";
+// import Events from "@/pages/Events";
 import Faqs from "@/pages/Faqs";
 import Contact from "@/pages/Contact";
 import Privacy from "@/pages/Privacy";
 import Terms from "@/pages/Terms";
 import NotFound from "@/pages/NotFound";
-
+import Success_Stories from "./pages/Success_Stories";
 export default function App() {
   return (
     <ErrorBoundary>
@@ -32,7 +32,7 @@ export default function App() {
           <Route path="/placements" element={<Placements />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/blog" element={<Blog />} />
-          <Route path="/events" element={<Events />} />
+          <Route path="/Success_Stories" element={<Success_Stories />} />
           <Route path="/faqs" element={<Faqs />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/privacy" element={<Privacy />} />

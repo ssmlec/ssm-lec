@@ -15,7 +15,7 @@ import {
 
 import heroBg from "@/assets/Background2.png";
 import aboutLab from "@/assets/heroimg.png";
-import aboutLab1 from "@/assets/home-2nd-photo.jpg";
+import aboutLab1 from "@/assets/home-about-1.png";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -78,9 +78,9 @@ export default function Home() {
       {/* <StatsBand /> */}
       {/* <FeaturedCourses /> */}
       {/* <PlacementHighlights /> */}
-      <SuccessStories />
-      <Testimonials />
-      <VideoTestimonials />
+      {/* <SuccessStories /> */}
+      {/* <Testimonials /> */}
+      {/* <VideoTestimonials /> */}
       {/* <GalleryPreview /> */}
       {/* <FaqSection /> */}
       {/* <BlogPreview /> */}
@@ -199,7 +199,7 @@ function Hero() {
 
 function PartnersStrip() {
   return (
-    <section className="border-y bg-muted/40 py-8">
+    <section className=" bg-muted/40 py-8">
       <p className="mb-5 text-center text-sm font-semibold uppercase tracking-widest text-muted-foreground">
         Empowering Leading Organizations Through Training
       </p>
@@ -217,59 +217,86 @@ const aboutPoints = [
 
 function About() {
   return (
-    <section className="py-20 sm:py-8">
-      <div className="mx-auto grid max-w-7xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
-        <Reveal className="relative">
-          <img
-            src={aboutLab1}
-            alt="SSMLEC industrial automation training lab"
-            width={1280}
-            height={960}
-            loading="lazy"
-            className="rounded-3xl shadow-glow"
-          />
-          <div className="absolute -bottom-6 right-6 rounded-2xl bg-gradient-brand px-6 py-4 text-white shadow-accent">
-            <p className="font-display text-3xl font-extrabold">3.5 +</p>
-            <p className="text-sm text-white/80">Years of Excellence</p>
-          </div>
-        </Reveal>
-        <div>
-          <SectionHeading
-            align="left"
-            // eyebrow="About SSMLEC"
-            title="An industry-centered gateway to Industry 4.0 careers"
-            subtitle="The Learning Excellence Centre helps aspiring technocrats deepen their skills in software, automation and IT, and launch professional careers at leading national and international companies."
-          />
-          <ul className="mt-8 grid gap-3 sm:grid-cols-2">
-            {aboutPoints.map((p, i) => (
-              <Reveal key={p} delay={i * 0.08}>
-                <li className="flex items-start gap-2 rounded-xl border bg-card p-3 text-sm shadow-soft">
-                  <CheckCircle2 className="mt-0.5 size-5 shrink-0 text-accent" />
-                  <span>{p}</span>
-                </li>
-              </Reveal>
-            ))}
-          </ul>
-          <div className="mt-8">
-            <Button asChild variant="hero" size="lg">
-              <Link to="/about">
-                Learn More About Us <ArrowRight className="size-4" />
-              </Link>
-            </Button>
-          </div>
-        </div>
+   <section className="py-20 sm:py-8" style={{padding:"30px 200px 30px 200px"}}>
+  <div className="mx-auto grid max-w-8xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
+
+    {/* Left Image */}
+    <Reveal className="relative">
+      <img
+        src={aboutLab1}
+        alt="SSMLEC industrial automation training lab"
+        loading="lazy"
+        className="h-[450px] w-full rounded-3xl object-cover shadow-glow"
+      />
+
+      {/* Floating Badge */}
+      <div className="absolute bottom-6 right-6 rounded-2xl bg-gradient-brand px-6 py-4 text-white shadow-accent">
+        <p className="font-display text-3xl font-extrabold">3.5+</p>
+        <p className="text-sm text-white/80">Years of Excellence</p>
       </div>
-    </section>
+    </Reveal>
+
+    {/* Right Content */}
+    <div className="flex flex-col justify-center">
+      <SectionHeading
+        align="left"
+        title="An industry-centered gateway to Industry 4.0 careers"
+        subtitle="The Learning Excellence Centre helps aspiring technocrats deepen their skills in software, automation and IT, and launch professional careers at leading national and international companies."
+      />
+
+      <ul className="mt-8 grid gap-3 sm:grid-cols-2">
+        {aboutPoints.map((p, i) => (
+          <Reveal key={p} delay={i * 0.08}>
+            <li className="flex items-start gap-2 rounded-xl border bg-card p-3 text-sm shadow-soft">
+              <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-accent" />
+              <span>{p}</span>
+            </li>
+          </Reveal>
+        ))}
+      </ul>
+
+      <div className="mt-8">
+        <Button asChild variant="hero" size="lg">
+          <Link to="/about">
+            Learn More About Us
+            <ArrowRight className="ml-2 h-4 w-4" />
+          </Link>
+        </Button>
+      </div>
+    </div>
+
+  </div>
+</section>
   );
 }
 
 function WhyChoose() {
   return (
-    <section className="bg-gradient-soft py-20 sm:py-28">
+    <section className="bg-gradient-soft py-20 sm:py-8">
+      <center>
+      <h1 className="mt-6 text-4xl font-extrabold leading-[1.05] sm:text-5xl lg:text-6xl">
+            {/* Craft your inner{" "} */}
+            <span className="bg-gradient-to-r from-accent to-[oklch(0.72_0.18_35)] bg-clip-text text-transparent">
+              Why Choose Us
+            </span>{" "}
+            {/* & shape your future */}
+          </h1>
+
+          </center>
+           <center>
+      <div className="text-center">
+ <div className="text-center">
+  <h2 className="mt-6 text-2xl font-bold leading-tight text-black sm:text-3xl lg:text-4xl">
+    Everything you need to become job-ready
+  </h2>
+</div>
+</div>
+          
+          </center>
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
-          eyebrow="Why Choose Us"
-          title="Everything you need to become job-ready"
+          // eyebrow=""
+          // title="Everything you need to become job-ready"
           subtitle="A premium learning experience engineered around real industry outcomes."
         />
         <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">

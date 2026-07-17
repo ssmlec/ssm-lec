@@ -29,7 +29,7 @@ const navLinks = [
   { to: "/placements", label: "Placements" },
   { to: "/gallery", label: "Gallery" },
   { to: "/blog", label: "Blog" },
-  { to: "/events", label: "Events" },
+  { to: "/Success_Stories", label: "Success_Stories" },
   { to: "/contact", label: "Contact" },
 ] as const;
 
@@ -136,10 +136,10 @@ export function Navbar() {
     </AnimatePresence>
   </div>
 
-  <NavItem to="/placements" label="Placements" scrolled={scrolled} />
+  {/* <NavItem to="/placements" label="Placements" scrolled={scrolled} /> */}
   <NavItem to="/gallery" label="Gallery" scrolled={scrolled} />
   {/* <NavItem to="/blog" label="Blog" scrolled={scrolled} /> */}
-  <NavItem to="/events" label="Events" scrolled={scrolled} />
+  <NavItem to="/Success_Stories" label="Success Stories" scrolled={scrolled} />
   <NavItem to="/contact" label="Contact" scrolled={scrolled} />
 </div>
 
@@ -172,7 +172,7 @@ export function Navbar() {
               <div className="p-4">
                 <div className="flex flex-col">
                   {navLinks
-                    .filter((l) => l.label !== "Blog" && l.label !== "Events" && l.label !== "Gallery")
+                    .filter((l) => l.label !== "Blog" && l.label !== "Success_Stories" && l.label !== "Gallery")
                     .slice(0, 2)
                     .map((l) => (
                       <MobileLink key={l.to} to={l.to} label={l.label} onClick={() => setMobileOpen(false)} />

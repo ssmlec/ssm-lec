@@ -7,6 +7,7 @@ import { Reveal } from "@/components/reveal";
 import { Counter } from "@/components/counter";
 import { Seo } from "@/components/seo";
 import { stats } from "@/lib/site-data";
+import { Sparkles } from "lucide-react";
 
 const mvp = [
   {
@@ -14,17 +15,17 @@ const mvp = [
     title: "Our Vision",
     desc: "To become India's most trusted industry-led learning ecosystem, empowering individuals and organizations with future-ready skills that accelerate careers, drive innovation, and transform businesses.",
   },
-{
-  icon: Target,
-  title: "Our Mission",
-  desc: [
-    "Bridge the gap between academia and industry through experiential learning.",
-    "Develop highly skilled professionals equipped for Industry 4.0 and beyond.",
-    "Partner with enterprises to build agile, future-ready workforces.",
-    "Deliver globally benchmarked learning experiences through technology, innovation, and industry expertise.",
-    "Create meaningful career opportunities through skill development and industry partnerships.",
-  ],
-},
+  {
+    icon: Target,
+    title: "Our Mission",
+    desc: [
+      "Bridge the gap between academia and industry through experiential learning.",
+      "Develop highly skilled professionals equipped for Industry 4.0 and beyond.",
+      "Partner with enterprises to build agile, future-ready workforces.",
+      "Deliver globally benchmarked learning experiences through technology, innovation, and industry expertise.",
+      "Create meaningful career opportunities through skill development and industry partnerships.",
+    ],
+  },
   {
     icon: Flag,
     title: "Our Promise",
@@ -81,41 +82,43 @@ export default function AboutPage() {
         subtitle="SSM Learning Excellence Centre is an industry-centered gateway that turns aspiring engineers into industry-ready technocrats."
         crumbs={[{ label: "About" }]}
       /> */}
-        <section className="relative overflow-hidden bg-gradient-hero pb-0 pt-32 text-white sm:pb-20 sm:pt-36">
+      <section className="relative overflow-hidden bg-gradient-hero pb-0 pt-32 text-white sm:pb-20 sm:pt-36">
+
 
         <section className="py-10 sm:py-2">
-        <div className="mx-auto grid max-w-7xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
-          <Reveal>
-            <img src={aboutLab} alt="SSMLEC training facility" width={1280} height={960} loading="lazy" className="rounded-3xl shadow-glow" />
+          <div className="mx-auto grid max-w-7xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-2 lg:px-8">
+            <Reveal>
+              <img src={aboutLab} alt="SSMLEC training facility" width={1280} height={960} loading="lazy" className="rounded-3xl shadow-glow" />
 
-                  <div className="mt-8 grid grid-cols-2 gap-4">
-              {stats.map((s) => (
-                <div key={s.label} className="rounded-2xl border bg-card p-5 shadow-soft">
-                  <p className="font-display text-3xl font-extrabold text-gradient">
-                    <Counter value={s.value} suffix={s.suffix} />
-                  </p>
-                  <p className="text-sm text-muted-foreground">{s.label}</p>
-                </div>
-              ))}
-            </div>
-          </Reveal>
-          
-          <div>
-      <SectionHeading
-            align="left"
-            light={true}
-            eyebrow="Institute Overview"
-            title="Transforming Potential into Professional Excellence"
-            subtitle="SSM Learning Excellence Centre (SSM LEC) is the talent development and workforce transformation division of SSM Infotech Solutions, a trusted leader with over 25 years of expertise in Industrial Software, Industrial Automation, Digital Engineering, and Information Technology solutions.
+              <div className="mt-8 grid grid-cols-2 gap-4">
+                {stats.map((s) => (
+                  <div key={s.label} className="rounded-2xl border bg-card p-5 shadow-soft">
+                    <p className="font-display text-3xl font-extrabold text-gradient">
+                      <Counter value={s.value} suffix={s.suffix} />
+                    </p>
+                    <p className="text-sm text-muted-foreground">{s.label}</p>
+                  </div>
+                ))}
+              </div>
+            </Reveal>
+
+            <div>
+              <SectionHeading
+
+                align="left"
+                light={true}
+                eyebrow="Institute Overview"
+                title="Transforming Potential into Professional Excellence"
+                subtitle="SSM Learning Excellence Centre (SSM LEC) is the talent development and workforce transformation division of SSM Infotech Solutions, a trusted leader with over 25 years of expertise in Industrial Software, Industrial Automation, Digital Engineering, and Information Technology solutions.
             Established in April 2023, SSM LEC was founded with a clear vision—to bridge the gap between academic education and industry expectations by developing highly skilled, industry-ready professionals equipped for the future of engineering and digital transformation.
             Through a unique blend of experiential learning, industry-led curriculum, hands-on project exposure, and globally recognized certifications, we empower students, working professionals, and corporate teams with the competencies required to excel in today's technology-driven industrial ecosystem."
-          />
-      
+              />
+
+            </div>
           </div>
-        </div>
+        </section>
+
       </section>
-      
-    </section>
 
       {/* Overview */}
       {/* <section className="py-20 sm:py-28">
