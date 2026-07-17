@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
 import { cn } from "@/lib/utils";
-import logoAsset from "@/assets/logo-1.png";
+import logoAsset from "@/assets/Logo-4.png";
 
 export function Logo({ light = false, className }: { light?: boolean; className?: string }) {
   return (
     <Link to="/" className={cn("group flex items-center", className)} aria-label="SSM Learning Excellence Centre home">
       <span
         className={cn(
-          "inline-flex items-center rounded-xl transition-transform group-hover:scale-[1.02]",
+          "inline-flex items-center rounded-sm transition-transform group-hover:scale-[1.02]",
           light && "bg-white p-1.5 shadow-soft",
         )}
       >

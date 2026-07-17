@@ -4,6 +4,7 @@ import { PageHero } from "@/components/page-hero";
 import { EnquiryForm } from "@/components/enquiry-form";
 import { Seo } from "@/components/seo";
 import { contactInfo } from "@/lib/site-data";
+import { FaqSection } from "./Home.tsx";
 
 export default function ContactPage() {
   const items = [
@@ -59,6 +60,7 @@ export default function ContactPage() {
             <div className="mt-6"><EnquiryForm /></div>
           </div>
         </div>
+        <FaqSection/>
       </section>
     </>
   );
